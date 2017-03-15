@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
         Button btndexclass = (Button) findViewById(R.id.btn_dexclass);
         Button btnpathclass = (Button) findViewById(R.id.btn_pathclass);
 
+        /**
+         * PathClassLoader
+         */
         btnpathclass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /**
+         * DexClassLoader
+         */
         btndexclass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
