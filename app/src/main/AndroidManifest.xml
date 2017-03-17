@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--android:sharedUserId="com.shake.test"-->
-<manifest
-    package="com.example.mac.hosttest"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:sharedUserId="com.shake.test"
-    >
+<!-- android:sharedUserId="com.shake.test" -->
+<manifest package="com.example.mac.hosttest"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:sharedUserId="com.shake.test">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -26,6 +24,15 @@
         </activity>
         <activity android:name=".DexClassLoaderActivity">
         </activity>
+        <activity android:name=".TestClassLoaderActivity">
+        </activity>
+        <activity android:name=".SimpleLoaderActivity">
+        </activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
     </application>
 
 </manifest>

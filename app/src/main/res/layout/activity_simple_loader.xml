@@ -9,26 +9,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mac.hosttest.MainActivity">
+    tools:context="com.example.mac.hosttest.SimpleLoaderActivity">
 
     <Button
-        android:id="@+id/btn_pathclass"
+        android:id="@+id/btn_copy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试PathClassLoader"/>
+        android:text="拷贝APK到内部存储"/>
     <Button
-        android:id="@+id/btn_dexclass"
+        android:id="@+id/btn_loader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试DexClassLoader"/>
+        android:text="加载到内存中"/>
     <Button
-        android:id="@+id/btn_testloader"
+        android:id="@+id/btn_reflect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试安卓的类加载器"/>
+        android:text="通过反射的方式加载"/>
+
     <Button
-        android:id="@+id/btn_simpleloader"
+        android:id="@+id/btn_interface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="两种简单的加载方式"/>
+        android:text="通过接口的方式加载"/>
 </LinearLayout>

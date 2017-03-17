@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btnsimpleloader = (Button) findViewById(R.id.btn_simpleloader);
+        Button btntestloader = (Button) findViewById(R.id.btn_testloader);
         Button btndexclass = (Button) findViewById(R.id.btn_dexclass);
         Button btnpathclass = (Button) findViewById(R.id.btn_pathclass);
 
@@ -34,6 +36,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,DexClassLoaderActivity.class));
             }
         });
+
+
+        btntestloader.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TestClassLoaderActivity.class));
+            }
+        });
+
+
+        btnsimpleloader.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SimpleLoaderActivity.class));
+            }
+        });
+
 
     }
 }
